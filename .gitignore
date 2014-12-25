@@ -30,5 +30,6 @@
 
 # Composer PHAR
 /composer.phar
-
+#ide
+.idea/
 
