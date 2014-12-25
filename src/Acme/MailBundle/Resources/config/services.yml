@@ -1,0 +1,4 @@
+services:
+#    acme_mail.example:
+#        class: Acme\MailBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]
