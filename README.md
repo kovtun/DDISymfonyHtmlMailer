@@ -11,10 +11,10 @@ __Namespace:__  Acme\MailBundle\MailGenerator
 
 __Located at__  MailBundle/MailGenerator/MailGenerator.php
         
-##Methods summary
+###Methods summary
 
 
-###_public_ `__construct( Twig_Environment $twig )`
+_public_ `__construct( Twig_Environment $twig )`
 
 Constructor
 
@@ -22,7 +22,7 @@ Parameters
     
         Twig_Environment $twig;
 
-###_public_ `getMessage( string $name, array $parameters = array() )` 
+_public_ `getMessage( string $name, array $parameters = array() )` 
 
 Parameters
 
@@ -38,8 +38,8 @@ Returns
 
     Swift_Message()
     
-##Properties summary
+###Properties summary
 
-###_protected_ Twig_Environment `$twig_env`
+_protected_ Twig_Environment `$twig_env`
 
     <table class="summary table table-bordered table-striped" id="properties">
