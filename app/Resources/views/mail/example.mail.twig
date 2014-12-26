@@ -1,0 +1,11 @@
+{% block subject %}{{username}} have some problems. Type: {{type}}{%endblock%}
+
+    {% block body_html %}
+        <h2>This is the <b>example</b> of the html email body</h2>
+        <b>Content:</b><br> {{info}}
+    {% endblock %}
+
+    {% block body_text %}
+        This is the example of the text email body.
+        Content:\n{{info}}
+    {% endblock %}

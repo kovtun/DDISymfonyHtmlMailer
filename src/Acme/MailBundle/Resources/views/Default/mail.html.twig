@@ -1,0 +1,26 @@
+{% extends '::layout.html.twig' %}
+{% form_theme form '::form_layout.html.twig' %}
+{% block body %}
+    {%if missive is defined and missive%}
+        <div class="alert alert-success">
+            <a href="#" class="close" data-dismiss="alert">&times;</a>
+            <strong>Success!</strong>
+            Your message has been sent successfully.<br>
+            We will contact you by e-mail, specified during registration.<br>
+        </div>
+    {%endif%}
+    <form method="post" action="{{ path('acme_mail_mailer') }}">
+        {{ form_errors(form) }}
+        <input type="hidden" name="_method" value="POST">
+        {{ form_row(form.name) }}
+        {{ form_row(form.email) }}
+         {{form_row(form.type)}}
+         {{form_row(form.message,{'attr':{'style':'height: 300px'} })}}
+        <div class=" col-xs-offset-10 col-xs-2">
+            {{ form_widget(form.send,{'attr':{'class':'btn btn-primary' }}) }}
+        </div>
+        {{ form_rest(form) }}
+    </form>
+    {#{ dump(form) }#}
+    {#{% dump form %}#}
+{% endblock %}
