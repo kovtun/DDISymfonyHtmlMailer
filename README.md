@@ -1,5 +1,5 @@
-Mailer
-======
+HTML_Mailer
+===========
 
 Skeleton of html mailer (example for Symfony 2.6/Swift mailer).
 
